@@ -563,7 +563,7 @@ import { ref, computed, reactive, onMounted, onUnmounted, nextTick } from 'vue';
 import { portfolioData } from './portfolioData';
 import myPhoto from './assets/avatar1.jpg';
 import picBoardPhoto from './assets/PicBoard.jpg';
-import lineFollowerPhoto from './assets/LineFollower.jpg';
+import lineFollowerPhoto from './assets/Linefollower.jpg';
 import logicGates from './assets/LogicGates.jpg';
 
 
@@ -677,7 +677,7 @@ let konamiIndex = 0;
 
 const handleKeyDown = (e: KeyboardEvent) => {
   const key = e.key.length === 1 ? e.key.toLowerCase() : e.key;
-  if (key === konamiSequence[konamiIndex].toLowerCase()) {
+  if (key === konamiSequence[konaminIndex].toLowerCase()) {
     konamiIndex++;
     if (konamiIndex === konamiSequence.length) {
       matrixOverdrive.value = true;
